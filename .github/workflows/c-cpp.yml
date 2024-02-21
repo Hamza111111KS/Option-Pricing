@@ -1,4 +1,9 @@
-name: C/C++ CI
+name: Setup Cpp (C++ / C)
+uses: aminya/setup-cpp@v0.37.0
+            
+            
+
+
 
 on:
   push:

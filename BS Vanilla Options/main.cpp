@@ -12,10 +12,12 @@
 
 using namespace std; // Place this directive before using cout
 
+const std::string BASE_DIR = "E:/AF/S4/c++/BSM/"
+
 int main() {
 
     // Displaying the results
-    std::string filename = "E:/AF/S4/c++/BSM/option_GS_df.csv"; // Replace "your_csv_file.csv" with your actual CSV file path
+    std::string filename = BASE_DIR + "option_GS_df.csv"; // Replace "your_csv_file.csv" with your actual CSV file path
 
     // Read the CSV file
     std::vector<std::vector<std::string>> csvData = readCSV(filename);
@@ -44,7 +46,7 @@ int main() {
 
     }
 
-    std::string outputFilename = "E:/AF/S4/c++/BSM/output.csv"; // Replace "output.csv" with your desired output CSV file path
+    std::string outputFilename = BASE_DIR + "output.csv"; // Replace "output.csv" with your desired output CSV file path
     outputResults(outputFilename, options, optionPrices, optionPayoffs);
     return 0;
 }
